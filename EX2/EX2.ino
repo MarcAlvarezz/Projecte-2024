@@ -1,6 +1,6 @@
-const int motorDret = 6;
-const int motorEsq = 5;
-const int sensorDret = A4;
+const int motorDret = 5;
+const int motorEsq = 6;
+const int sensorDret = A3;
 const int sensorEsq = A5;
 int estatDret = 0;
 int estatEsq = 0;
@@ -24,7 +24,7 @@ estatEsq = digitalRead(sensorEsq);
 
 if (estatDret == 0) 
 {
-digitalwrite (motorDret, HIGH) ;
+digitalWrite (motorDret, HIGH) ;
 }
 else
 {
@@ -32,10 +32,10 @@ digitalWrite (motorDret, LOW) ;
 }
 if (estatEsq== 0)
 {
-digitalwrite (motorEsq, HIGH);
+digitalWrite (motorEsq, HIGH);
 }
 else
 {
-digitalWrite (motorEsa, LOW) ;
+digitalWrite (motorEsq, LOW);
 }
 }
